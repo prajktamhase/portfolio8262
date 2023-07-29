@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+<style>
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  .img {
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 110px;
+    left: 50px;
+    box-shadow: 0 0 10px 15px #efc77c;
+  }
+  .img:hover{
+    box-shadow:0 0 10px 15px white;
+  }
+   .main-contain {
+    border-radius: 5px;
+    height: 600px;
+    width: 1490px;
+    display: flex;
+  }
+   .text {
+    font-size: 40px;
+    position: relative;
+    left: 550px;
+    bottom: 300px;
+     }
+  .color {
+    background-color: black;
+    color: white;
+  }
+  .navbar:hover {
+    background-color: aquamarine;
+  }
+   .navbar {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+    padding: 15px;
+   }
+  .space {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+  }
+   .space:hover {
+    color: tomato;
+     }
+  .main-cls {
+    display: flex;
+  }
+  .contact {
+  font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    
+  }
+    #contact {
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 250px;
+    background-color:pink;
+    
+    }
+   .enter {
+    font-size: 22px;
+    position: relative;
+    top: 60px;
+    background-color: black;
+    color: white;
+     }
+  .submit {
+    position: relative;
+    left: 110px;
+    background-color:black;
+    color: white;
+    font-size: 20px;
+    top: 60px;
+    padding: 5px;
+    margin: 5px;
+    }
+   #holder {
+    font-size: 40px;
+    position: relative;
+    left: 55px;
+    top:30px;
+    color: black;
+  }
+   #text-skill {
+   display: flex;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 370px;
+    width: 370px;
+    position: relative;
+    left: 870px;
+    bottom: 380px;
+    background-color:pink;
+  }
+  .heading {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    color: black;
+   }
+  .text-head {
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    color: black;
+    }
+    
+</style>
+</head>
+   <body class="color">
+ <div class="navbar">
+    <a href="#about" class="space">About Us</a>
+    <a href="#contact" class="space">Contact Me</a>
+    <a href="#skill" class="space">Skills</a>
+  </div>
+   <div class="main-contain">
+    <div>
+      <img src="./prajkta.jpg" height="350px" class="img" />
+           <i>
+        <p class="text">Heyyy...! <br /> <br />I'm Prajkta Bajrang Mhase<br><br /><span>I'm learning web
+            development.....<br /><br />And I'm trying to build some small websites....<br />And here's a 
+            demo.</span>
+        </p>
+      </i>
+    </div>
+  </div>
+  <br />
+  <p class="contact">Education : Bacholer's of Computer Application<br /><br />
+    collage : Loknete Ramdas Patil Dhumal Asc Collage Rahuri, <br />
+    Pune Univercity<br /><br />
+    Technical skills : HTML,CSS ,Git and Github.<br />
+    <br />
+   contact : <a href="tel:8262945593"> 8262945593</a><br />
+    Gmail: <a href="mailto:prajaktamhase8@gmail.com"> prajaktamhase8@gmail.com</a>
+  </p>
+  </a>
+   <div id="contact">
+    <i><h1 id="holder">Contact Me📞</h1></i>
+    <p >
+      <input type="name" placeholder="Enter Name" class="enter" /><br /><br />
+      <input type="email" placeholder="Enter Email" class="enter" /><br /><br />
+      <input type="mob" placeholder="Enter Mobile No" class="enter" /><br /><br />
+      <input type="address" placeholder="Enter Address" class="enter" /><br /><br />
+      <button class="submit">Submit</button></p>
+    </div>
+    <div id="text-skill">
+      <p id="skill">
+      <i><h1 class="heading">Skilis😎 </h1></i>
+      <ol class="text-head">
+        <li>HTML</li><br />
+        <li>CSS</li><br />
+        <li>GIT</li><br />
+        <li>GITHUB</li><br />
+      </ol>
+      </p>
+    </div>
+    </div>
+  </body>
+</html>

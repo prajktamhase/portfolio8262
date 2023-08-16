@@ -1,183 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-<style>
-  * {
-    margin: 0%;
-    padding: 0%;
-  }
-  .img {
-    border-radius: 50%;
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    top: 110px;
-    left: 50px;
-    box-shadow: 0 0 10px 15px #efc77c;
-  }
-  .img:hover{
-    box-shadow:0 0 10px 15px white;
-  }
-   .main-contain {
-    border-radius: 5px;
-    height: 600px;
-    width: 1490px;
-    display: flex;
-  }
-   .text {
-    font-size: 40px;
-    position: relative;
-    left: 550px;
-    bottom: 300px;
-     }
-  .color {
-    background-color: black;
-    color: white;
-  }
-  .navbar:hover {
-    background-color: aquamarine;
-  }
-   .navbar {
-    color: black;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    background-color: tomato;
-    padding: 15px;
-   }
-  .space {
-    margin-left: 50px;
-    text-decoration: none;
-    color: black;
-  }
-   .space:hover {
-    color: tomato;
-     }
-  .main-cls {
-    display: flex;
-  }
-  .contact {
-  font-size: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 70px;
-    
-  }
-    #contact {
-    border: 2px solid white;
-    border-radius: 20px;
-    height: 350px;
-    width: 350px;
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-    left: 250px;
-    background-color:pink;
-    
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
     }
-   .enter {
-    font-size: 22px;
-    position: relative;
-    top: 60px;
-    background-color: black;
-    color: white;
-     }
-  .submit {
-    position: relative;
-    left: 110px;
-    background-color:black;
-    color: white;
-    font-size: 20px;
-    top: 60px;
-    padding: 5px;
-    margin: 5px;
+
+    .img {
+      border-radius: 50%;
+      margin-left: 40px;
+      margin-top: 50px;
+      box-shadow: 0 0 5px 5px #efc77c;
     }
-   #holder {
-    font-size: 40px;
-    position: relative;
-    left: 55px;
-    top:30px;
-    color: black;
-  }
-   #text-skill {
-   display: flex;
-    border-radius: 20px;
-    border: 2px solid white;
-    height: 370px;
-    width: 370px;
-    position: relative;
-    left: 870px;
-    bottom: 380px;
-    background-color:pink;
-  }
-  .heading {
-    font-size: 40px;
-    text-align: center;
-    position: relative;
-    top: 10px;
-    left: 100px;
-    color: black;
-   }
-  .text-head {
-    position: relative;
-    top: 100px;
-    font-size: 30px;
-    color: black;
+
+    .img:hover {
+      box-shadow: 0 0 5px 5px white;
     }
-    
-</style>
+
+    .main-contain {
+      border-radius: 5px;
+      height: 600px;
+      width: 1490px;
+      display: flex;
+    }
+
+
+
+
+    /* .navbar {
+      color: black;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      background-color:white;
+      padding: 15px;
+    } */
+
+    .space {
+      margin-left: 50px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .space:hover {
+      color: tomato;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and(min-width=600)and(max-width=778) {}
+  </style>
 </head>
-   <body class="color">
- <div class="navbar">
-    <a href="#about" class="space">About Us</a>
-    <a href="#contact" class="space">Contact Me</a>
-    <a href="#skill" class="space">Skills</a>
+
+<body>
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 text-center" href="#">Portfolio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active ms-5 text-danger" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active  ms-5 text-danger" aria-current="page" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active  ms-5 text-danger" aria-current="page" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active  ms-5 text-danger" aria-current="page" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active  ms-5 text-danger" aria-current="page" href="#skills">Skills</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./prajkta.jpg" height="270px" class="img" />
+        <h2 class=" p-4 ms-5">Prajkta Mhase</h2>
+        <a href="https://github.com/prajktamhase" class="  ms-5"><img src="./img.png" height="50px" /></a>
+        <a href="https://www.instagram.com/-praju2003_"><img src="./insta.png" height="50px" /></a>
+        <a href="https://in.linkedin.com/prajktamhase"> <img src="./in.png" height="50px" /></a>
+        <img src="./twitter.png" height="50px" /><br />
+        <a href="resume.html"><button class="p-1 btn btn-outline-danger mt-4 ms-5 m-5">Show Resume</button></a>
+      </div>
+      <div id="about" class="col-md-8">
+        <i>
+          <p class="fs-2 mt-51">"Heyyy...!"👋 <br /> <br />I'm Prajkta Bajrang Mhase. <span>I'm learning web
+              development and I Love Coding❤.....💻.<br />I have learning language for Html,Css,Git,Github,Bootstrap and
+              ,Iwill
+              created project from Html, Css, Git, Github, Bootstrap ....And I'm trying to build some small
+              websites....</span>
+          </p>
+        </i>
+        <div class="col-md-6 m-5 p-1 mt-5">
+          <p class="fs-2 text-align-center">Technical skills :</p>
+          <button class="p-2 btn btn-outline-dark text-wrap-wrap">HTML</button>
+          <button class=" p-2 btn btn-outline-warning">CSS</button>
+          <button class=" p-2 btn btn-outline-primary">Bootstrap</button>
+          <button class=" p-2 btn btn-outline-secondary">Git</button>
+          <button class=" p-2 btn btn-outline-danger">Github</button>
+          <button class=" p-2 btn btn-outline-success">Java Script</button>
+        </div>
+      </div>
+
+    </div>
+
   </div>
-   <div class="main-contain">
-    <div>
-      <img src="./prajkta.jpg" height="350px" class="img" />
-           <i>
-        <p class="text">Heyyy...! <br /> <br />I'm Prajkta Bajrang Mhase<br><br /><span>I'm learning web
-            development.....<br /><br />And I'm trying to build some small websites....<br />And here's a 
-            demo.</span>
-        </p>
-      </i>
+<h1 id="project" class=" p-3 m-3 text-center"> Projects</h1>
+
+  <div class="container p-2 m-5">
+    <div class="row">
+      <div class="col-md-4 me-1">
+        <img src="./groco.png" class="img-fluid m-2" style="height: 250px;">
+        <a href="file:///E:/groco-igcp1-first-group-project/index.html">
+          <button class="m-3 p-1 btn btn-dark ms-5 mx-5 text-center ">view</button>
+          
+        </a>
+        </div>
+
+      <div class="col-md-4  ">
+        <img src="./hub.png" class="img-fluid m-2" style="height: 250px;">
+        <a href="file:///C:/Users/DELL/Desktop/electro-tech-hub-igcp1-group-project-2/index.html">
+          <button class="m-3 p-1 btn btn-dark ms-5 mx-5 text-center text-center">view</button>
+          
+        </a>
+        </div>
+
     </div>
-  </div>
-  <br />
-  <p class="contact">Education : Bacholer's of Computer Application<br /><br />
-    collage : Loknete Ramdas Patil Dhumal Asc Collage Rahuri, <br />
-    Pune Univercity<br /><br />
-    Technical skills : HTML,CSS ,Git and Github.<br />
-    <br />
-   contact : <a href="tel:8262945593"> 8262945593</a><br />
-    Gmail: <a href="mailto:prajaktamhase8@gmail.com"> prajaktamhase8@gmail.com</a>
-  </p>
-  </a>
-   <div id="contact">
-    <i><h1 id="holder">Contact Me📞</h1></i>
-    <p >
-      <input type="name" placeholder="Enter Name" class="enter" /><br /><br />
-      <input type="email" placeholder="Enter Email" class="enter" /><br /><br />
-      <input type="mob" placeholder="Enter Mobile No" class="enter" /><br /><br />
-      <input type="address" placeholder="Enter Address" class="enter" /><br /><br />
-      <button class="submit">Submit</button></p>
+
+
+    <div id="education" class="row mb-5 flex-wrap-wrap ">
+      <div class="col-md-6">
+        <p class=" border border-dark m-5 p-2"><span class="fs-2 text-danger">Education </span> <br />I will currently
+          pursing My graduation for<br /> Bacholer's of Computer Application<br />Mar-Apr-2022-23<br />
+          collage : Loknete Ramdas Patil Dhumal Asc Collage Rahuri, <br />
+          Pune Univercity<br />
+
+          <br />
+      </div>
+      <div class="col-md-5 flex-wrap-wrap ">
+        <div class="contact border border-dark m-5 p-2 text-center">
+          <!-- <div class="contact-us"> -->
+          <h2 id="contact" class="text-center">Contact Me📞</h2>
+
+          <div class="text-align-center">
+            <form>
+              <input type="text" placeholder="Enter  Name" class=" m-1" />
+              <br />
+
+
+              <input type="email" placeholder="Enter Email" class=" m-1" />
+              <br />
+
+
+              <input type="password" placeholder="Enter Password" class="m-1" />
+              <br />
+
+
+              <input type="text" placeholder="Enter Mobile No" class="m-1" />
+              <br />
+
+
+              <input type="text" placeholder="Enter Address" class="m-1" />
+              <br />
+
+
+
+              <input type="name" placeholder="Enter message" class="m-1" />
+
+
+
+            </form>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div id="text-skill">
-      <p id="skill">
-      <i><h1 class="heading">Skilis😎 </h1></i>
-      <ol class="text-head">
-        <li>HTML</li><br />
-        <li>CSS</li><br />
-        <li>GIT</li><br />
-        <li>GITHUB</li><br />
-      </ol>
-      </p>
+
+<div class="h4 pb-2 mb-4 text-danger border-bottom border-danger text-center fs-2">
+      Skills
     </div>
-    </div>
-  </body>
+    <div id="skills" class="container">
+      <div class="row ">
+        <div class=" mx-auto ms-5com-md-2 p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+          <img src="./html.png" class="img-fluid" style="height: 200px;" />
+          <img src="./css.png" class="img-fluid" style="height: 200px;" />
+          <img src="./git.png" class="img-fluid" style="height: 200px;" />
+          <img src="./github.png" class="img-fluid" style="height: 200px;" />
+          <img src="./bootstrap.png" class="img-fluid" style="height: 200px;" />
+          <img src="./js.png" class="img-fluid" style="height: 200px;" />
+        </div>
+      </div>
+      </div>
+
+      <footer class="bg-dark mt-5">
+        <div class="container text-light">
+          <div class="row">
+           
+            <div class="col-lg-6 col-md-6 col-sm-12 my-md-3 my-sm-5">
+              <h5 class=" fs-4">Quick Links </h5>
+              <a href="./index" style="text-decoration: none; display:block; color: white;">Home</a>
+              <a href="./about" style="text-decoration: none; display:block; color: white;">About us</a>
+              <a href="./contact" style="text-decoration: none; display:block; color: white;">Contact us</a>
+              <a href="./skill" style="text-decoration: none; display:block; color: white;">Skills</a>
+              <a href="./education" style="text-decoration: none; display:block; color: white;">Education</a>
+             
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 my-md-3 my-sm-3">
+              <h5 class=" fs-4">Contact Us</h5>
+             <pre><a href="tel:+919373814613" style="text-decoration: none; display:block; color: white;"><i class="fa-solid fa-phone-volume"></i> +918262945593</a></pre> 
+                  <a href="mailto:prajaktamhase8@gmail.com" style="text-decoration: none; display:block; color: white;"><i class="fa-solid fa-envelope"></i>
+                    prajaktamhase8@gmail.com</a>
+                      <br>
+                  <!-- <input type="tel"> -->
+                  <span>Click to know our team</span><br>
+                  <a href="./pages/aboutus.html" style="text-decoration: none; display:block; color: white;">About Us</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
